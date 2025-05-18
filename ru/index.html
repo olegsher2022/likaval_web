@@ -12,17 +12,13 @@
       background-color: #fdfaf6;
       color: #3e3e3e;
     }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1601568872563-18b0fda1f024') center center/cover no-repeat;
+    .hero-carousel .carousel-item {
       height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
+      background-size: cover;
+      background-position: center;
       position: relative;
     }
-    .hero-overlay {
+    .carousel-caption {
       background-color: rgba(0, 0, 0, 0.5);
       padding: 2rem;
       border-radius: 10px;
@@ -46,10 +42,16 @@
 </head>
 <body>
 
-<header class="hero">
-  <div class="hero-overlay">
-    <h1 class="display-4">Керамика как медитация</h1>
-    <p class="lead">Отпечатки души в каждой чашке — Лика Валь</p>
+<header>
+  <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('images/shimi.jpeg');">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4">Керамика как медитация</h1>
+          <p class="lead">Отпечатки души в каждой чашке — Лика Валь</p>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
